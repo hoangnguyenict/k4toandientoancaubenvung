@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khái niệm: Tính toàn diện - Toàn cầu hóa - Phát triển bền vững</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Nunito', sans-serif; background-color: #f0f4f8; padding: 20px; }
+        .glass-panel { background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #cbd5e1; padding: 12px; }
+        th { background-color: #3b82f6; color: white; font-weight: 700; text-align: left; }
+        
+        textarea { resize: none; overflow: hidden; min-height: 80px; width: 100%; outline: none; background: transparent; }
+        input[type="text"] { outline: none; }
+        
+        /* Tùy chỉnh Radio button */
+        input[type="radio"] { accent-color: #3b82f6; width: 1.1rem; height: 1.1rem; cursor: pointer; margin-right: 8px; flex-shrink: 0; }
+        
+        /* Tùy chỉnh scrollbar */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+<div class="max-w-5xl mx-auto glass-panel p-8 sm:p-12" id="capture-area">
+    <!-- Header -->
+    <div class="text-center mb-10">
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-800 uppercase tracking-wide mb-2">
+            KHÁI NIỆM: TÍNH TOÀN DIỆN – TOÀN CẦU HÓA – PHÁT TRIỂN BỀN VỮNG
+        </h1>
+        <p class="text-xs text-gray-500 italic mb-6">Thiết kế: Hoangntm2 - VSC Tih Times City</p>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+            <div class="flex items-center border border-gray-300 rounded-lg px-4 py-2 w-full sm:w-64 bg-white">
+                <input type="text" id="studentName" class="w-full bg-transparent text-gray-800 text-center font-semibold" placeholder="Họ và tên">
+            </div>
+            <div class="flex items-center border border-gray-300 rounded-lg px-4 py-2 w-full sm:w-40 bg-white">
+                <input type="text" id="studentClass" class="w-full bg-transparent text-gray-800 text-center font-semibold" placeholder="Lớp">
+            </div>
+        </div>
+    </div>
+
+    <!-- Task 1 -->
+    <div class="mb-10">
+        <h2 class="text-lg font-bold text-blue-500 mb-4">Task 1: Trình bày các khái niệm theo ý hiểu của mình</h2>
+        <div class="overflow-x-auto">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="w-[10%] text-center">STT</th>
+                        <th class="w-[30%]">Khái niệm</th>
+                        <th class="w-[60%]">Ý nghĩa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center font-semibold text-gray-600">1</td>
+                        <td class="font-bold text-gray-800">Tính toàn diện</td>
+                        <td><textarea placeholder="Nhập ý nghĩa của khái niệm..." oninput="autoGrow(this)"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center font-semibold text-gray-600">2</td>
+                        <td class="font-bold text-gray-800">Toàn cầu hóa</td>
+                        <td><textarea placeholder="Nhập ý nghĩa của khái niệm..." oninput="autoGrow(this)"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center font-semibold text-gray-600">3</td>
+                        <td class="font-bold text-gray-800">Phát triển bền vững</td>
+                        <td><textarea placeholder="Nhập ý nghĩa của khái niệm..." oninput="autoGrow(this)"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="mb-10">
+        <h2 class="text-lg font-bold text-blue-500 mb-4">Task 2: Nối các ví dụ với khái niệm phù hợp</h2>
+        <div class="overflow-x-auto">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="w-[8%] text-center">STT</th>
+                        <th class="w-[32%]">Ví dụ</th>
+                        <th class="w-[25%]">Khái niệm</th>
+                        <th class="w-[35%]">Vì sao?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td class="text-center font-semibold text-gray-600 align-top">1</td>
+                        <td class="text-gray-800 align-top">AI giúp người khiếm thị nghe sách bằng giọng đọc.</td>
+                        <td class="align-top">
+                            <div class="flex flex-col gap-2">
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q1" value="Tính toàn diện"> Tính toàn diện</label>
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q1" value="Toàn cầu hóa"> Toàn cầu hóa</label>
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q1" value="Phát triển bền vững"> Phát triển bền vững</label>
+                            </div>
+                        </td>
+                        <td class="align-top"><textarea placeholder="Giải thích..." oninput="autoGrow(this)"></textarea></td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                        <td class="text-center font-semibold text-gray-600 align-top">2</td>
+                        <td class="text-gray-800 align-top">AI dịch bài học sang tiếng Anh để bạn nước ngoài hiểu.</td>
+                        <td class="align-top">
+                            <div class="flex flex-col gap-2">
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q2" value="Tính toàn diện"> Tính toàn diện</label>
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q2" value="Toàn cầu hóa"> Toàn cầu hóa</label>
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q2" value="Phát triển bền vững"> Phát triển bền vững</label>
+                            </div>
+                        </td>
+                        <td class="align-top"><textarea placeholder="Giải thích..." oninput="autoGrow(this)"></textarea></td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                        <td class="text-center font-semibold text-gray-600 align-top">3</td>
+                        <td class="text-gray-800 align-top">AI tắt đèn khi không có ai trong lớp học.</td>
+                        <td class="align-top">
+                            <div class="flex flex-col gap-2">
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q3" value="Tính toàn diện"> Tính toàn diện</label>
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q3" value="Toàn cầu hóa"> Toàn cầu hóa</label>
+                                <label class="flex items-center text-sm text-gray-700 cursor-pointer"><input type="radio" name="q3" value="Phát triển bền vững"> Phát triển bền vững</label>
+                            </div>
+                        </td>
+                        <td class="align-top"><textarea placeholder="Giải thích..." oninput="autoGrow(this)"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Reflection Question -->
+    <div>
+        <h3 class="text-lg font-bold text-emerald-600 mb-2 flex items-center">
+            <i class="fa-regular fa-pen-to-square mr-2"></i> Câu hỏi suy ngẫm:
+        </h3>
+        <p class="text-sm text-gray-600 italic mb-3">"Theo con, vì sao một giải pháp AI cần quan tâm đến cả 3 điều trên?"</p>
+        <textarea class="w-full bg-white border border-gray-300 rounded-lg p-3 outline-none focus:ring-2 focus:ring-emerald-400 text-gray-800 shadow-sm min-h-[120px]" placeholder="Nhập câu trả lời của bạn..." oninput="autoGrow(this)"></textarea>
+    </div>
+</div>
+
+<!-- Export Button -->
+<div class="max-w-5xl mx-auto mt-6 text-center pb-10">
+    <button onclick="exportToPNG()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded shadow-lg transition duration-300 text-lg">
+        Lưu báo cáo (PNG)
+    </button>
+</div>
+
+<!-- Modal Warning -->
+<div id="warningModal" class="hidden fixed inset-0 bg-gray-900/60 flex items-center justify-center z-50 p-4">
+    <div class="bg-white p-6 rounded-xl shadow-2xl max-w-sm w-full text-center">
+        <div class="text-red-500 text-5xl mb-3"><i class="fa-solid fa-circle-exclamation"></i></div>
+        <h2 class="text-xl font-bold text-gray-800 mb-2">Thiếu thông tin!</h2>
+        <p class="text-sm text-gray-600 mb-5">Vui lòng nhập đầy đủ <strong class="text-red-500">Họ và tên</strong> và <strong class="text-red-500">Lớp</strong> trước khi lưu ảnh.</p>
+        <button onclick="document.getElementById('warningModal').classList.add('hidden')" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2.5 px-6 rounded-lg w-full transition">Đã hiểu</button>
+    </div>
+</div>
+
+<script>
+    // Tự động giãn dòng Textarea
+    function autoGrow(element) {
+        element.style.height = 'auto';
+        element.style.height = (element.scrollHeight) + 'px';
+    }
+
+    // Xuất ảnh PNG chống cắt chữ
+    async function exportToPNG() {
+        const nameInput = document.getElementById('studentName');
+        const classInput = document.getElementById('studentClass');
+        
+        if (!nameInput.value.trim() || !classInput.value.trim()) {
+            document.getElementById('warningModal').classList.remove('hidden');
+            return;
+        }
+
+        const container = document.getElementById('capture-area');
+        
+        // Tắt shadow để tránh nhiễu/lớp mờ
+        const originalBoxShadow = container.style.boxShadow;
+        container.style.boxShadow = 'none';
+
+        const originalElements = [];
+        const elementsToReplace = container.querySelectorAll('input, textarea');
+        
+        elementsToReplace.forEach(el => {
+            const div = document.createElement('div');
+            const computedStyle = window.getComputedStyle(el);
+            
+            div.style.cssText = `
+                width: ${computedStyle.width};
+                margin: ${computedStyle.margin};
+                padding: ${computedStyle.padding};
+                border: ${computedStyle.border};
+                border-radius: ${computedStyle.borderRadius};
+                background-color: ${computedStyle.backgroundColor === 'rgba(0, 0, 0, 0)' ? 'transparent' : computedStyle.backgroundColor};
+                font-family: ${computedStyle.fontFamily};
+                font-size: ${computedStyle.fontSize};
+                font-weight: ${computedStyle.fontWeight};
+                line-height: ${computedStyle.lineHeight};
+                color: ${computedStyle.color};
+                display: flex;
+                box-sizing: border-box;
+                white-space: pre-wrap;
+                word-break: break-word;
+            `;
+
+            if (el.tagName === 'INPUT') {
+                if (el.type === 'radio') {
+                    div.style.alignItems = 'center';
+                    div.style.justifyContent = 'center';
+                    div.textContent = el.checked ? '◉' : '◯';
+                    div.style.color = el.checked ? '#3b82f6' : '#9ca3af'; // Màu xanh blue-500
+                    div.style.fontSize = '1.3em'; 
+                    div.style.width = '1.2rem';
+                    div.style.height = '1.2rem';
+                    div.style.marginRight = '0.5rem';
+                } else {
+                    div.style.height = computedStyle.height;
+                    div.style.alignItems = 'center';
+                    div.style.justifyContent = 'center'; // Center align for Name/Class inputs
+                    div.textContent = el.value || el.placeholder;
+                    if (!el.value) div.style.color = '#cbd5e1';
+                }
+            } else if (el.tagName === 'TEXTAREA') {
+                div.style.minHeight = Math.max(el.scrollHeight, el.offsetHeight) + 'px';
+                div.style.alignItems = 'flex-start';
+                div.textContent = el.value || el.placeholder;
+                if (!el.value) div.style.color = '#9ca3af';
+            }
+
+            el.parentNode.insertBefore(div, el);
+            el.style.display = 'none';
+            originalElements.push({ original: el, placeholder: div });
+        });
+
+        try {
+            const canvas = await html2canvas(container, {
+                scale: 3, // Phân giải cao
+                useCORS: true,
+                backgroundColor: "#ffffff",
+                logging: false
+            });
+
+            // Tên file: [Lớp]_[Họ và tên]_Khai_niem_AI.png
+            const fileName = `${classInput.value.trim()}_${nameInput.value.trim()}_Khai_niem_AI.png`;
+            const link = document.createElement('a');
+            link.download = fileName;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        } catch (error) {
+            console.error("Lỗi xuất file:", error);
+            alert("Đã xảy ra lỗi khi lưu ảnh. Vui lòng thử lại!");
+        } finally {
+            // Phục hồi DOM
+            container.style.boxShadow = originalBoxShadow;
+            
+            originalElements.forEach(item => {
+                item.original.style.display = '';
+                item.placeholder.remove();
+            });
+        }
+    }
+</script>
+
+</body>
+</html>
